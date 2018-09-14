@@ -1,0 +1,281 @@
+{
+  "target_list": [
+    4,
+    2
+  ],
+  "option_duplicate": "update_already_have_value",
+  "form_setting": {
+    "opting_option": {
+      "single_opt_in": {
+        "thanks_message": {
+          "message": "",
+          "save_for_future": false
+        }
+      },
+      "double_opt_in": {
+        "verification_message": {
+          "message": "confirmation message",
+          "save_for_future": true
+        },
+        "thanks_message": {
+          "message": "thanks you message",
+          "save_for_future": true
+        }
+      },
+      "redirect_link": ""
+    },
+    "messages": {
+      "error_message": "something is not right",
+      "invalid_email": "invalid",
+      "email_exist": "email address already e",
+      "success_message": "sucess message"
+    },
+    "opting_selected": "double_opt_in"
+  },
+  "targetGlobalContacts": false,
+  "captcha": {
+    "site_key": "1",
+    "secret_key": "2"
+  },
+  "configuration_check": [
+    "on"
+  ],
+  "flag_captcha_check": [
+    "on"
+  ],
+  "buttons": [
+    "subscribe"
+  ],
+  "inputs": [
+    "f0",
+    "f1",
+    "f8",
+    "f9",
+    "f7"
+  ],
+  "preview_schema": {
+    "title": {
+      "fieldType": "TextField",
+      "text": "Newsletter",
+      "custom_class": "",
+      "parent_class": "col-md-12 m-1",
+      "styles": {
+        "fontSize": "30px",
+        "color": "#f3f3f3",
+        "TextAlign": "center"
+      },
+      "index": 1,
+      "content_type": "text"
+    },
+    "desc": {
+      "fieldType": "TextField",
+      "text": "<p>Sign up form</p>",
+      "custom_class": "",
+      "parent_class": "col-md-12 m-1",
+      "styles": {
+        "fontSize": "20px",
+        "color": "#efefef",
+        "TextAlign": "center"
+      },
+      "index": 2,
+      "content_type": "html"
+    },
+    "fields": {
+      "index": 3,
+      "f0": {
+        "fieldType": "TextInput",
+        "required": false,
+        "custom_class": "form-control border-primary",
+        "parent_class": "form-group col-md-10 m-1",
+        "text": "Email",
+        "layout": "outside",
+        "styles": {
+          "backgroundColor": "#00ff00"
+        },
+        "label_color": "#cc4125"
+      },
+      "f1": {
+        "fieldType": "TextInput",
+        "required": false,
+        "custom_class": "form-control border-primary",
+        "parent_class": "form-group col-md-10 m-1",
+        "text": "Mobile",
+        "layout": "outside",
+        "styles": {
+          "backgroundColor": "#00ff00"
+        },
+        "label_color": "#cc4125"
+      },
+      "f8": {
+        "fieldType": "TextRadioBox",
+        "required": false,
+        "custom_class": "",
+        "parent_class": "form-group col-md-10 m-1",
+        "text": "Gender",
+        "layout": "outside",
+        "styles": {
+          "backgroundColor": "#00ff00"
+        },
+        "options": [
+          "male",
+          "female"
+        ],
+        "format": "radio",
+        "label_color": "#cc4125"
+      },
+      "f7": {
+        "fieldType": "TextInputDob",
+        "required": false,
+        "custom_class": "border-primary",
+        "parent_class": "form-group col-md-10 m-1",
+        "text": "Dob",
+        "layout": "outside",
+        "styles": {
+          "backgroundColor": "#00ff00"
+        },
+        "format": "DD/MM/YYYY",
+        "label_color": "#cc4125"
+      },
+      "f9": {
+        "fieldType": "TextInput",
+        "required": false,
+        "custom_class": "form-control border-primary",
+        "parent_class": "form-group col-md-10 m-1",
+        "text": "Html",
+        "layout": "outside",
+        "styles": {
+          "backgroundColor": "#00ff00"
+        },
+        "label_color": "#cc4125"
+      }
+    },
+    "subscribe": {
+      "fieldType": "TextButton",
+      "background_color": "#28D094",
+      "parent_class": "col-md-3 m-1",
+      "text": "Subscribe",
+      "styles": {
+        "backgroundColor": "#a61c00",
+        "color": "#351c75"
+      },
+      "index": 5
+    },
+    "confirmation_check": {
+      "fieldType": "TextCheckBoxCustom",
+      "custom_class": "input-check",
+      "parent_class": "col-md-10 m-1",
+      "index": 4,
+      "text": "dummy cosntent",
+      "styles": {
+        "fontSize": "14px",
+        "color": "#9900ff",
+        "TextAlign": "center"
+      }
+    }
+  },
+  "list_schema": [
+    {
+      "id": "f0",
+      "text": "Email",
+      "required": false
+    },
+    {
+      "id": "f1",
+      "text": "Mobile",
+      "required": false
+    },
+    {
+      "text": "Gender",
+      "required": false,
+      "id": "f8"
+    },
+    {
+      "text": "Html",
+      "required": false,
+      "id": "f9"
+    },
+    {
+      "text": "Dob",
+      "required": false,
+      "id": "f7"
+    }
+  ],
+  "settings": {
+    "form_width": "400px",
+    "background_color": "#00ffff",
+    "border_color": "#ff00ff",
+    "title_color": "#f3f3f3",
+    "desc_color": "#efefef",
+    "input_color": "#00ff00",
+    "conformation_color": "#9900ff",
+    "button_color": "#a61c00",
+    "button_color_text": "#351c75",
+    "label_color": "#cc4125",
+    "inputs": {
+      "layout": "outside",
+      "backgroundColor": "#fff"
+    },
+    "default_fields": [
+      "email",
+      "mobile"
+    ]
+  },
+  "content": "",
+  "list": [
+    {
+      "id": 1,
+      "name": "Apple"
+    },
+    {
+      "id": 2,
+      "name": "Banana"
+    },
+    {
+      "id": 3,
+      "name": "Orange"
+    },
+    {
+      "id": 4,
+      "name": "Mango"
+    },
+    {
+      "id": 5,
+      "name": "Pear"
+    },
+    {
+      "id": 6,
+      "name": "Peach"
+    },
+    {
+      "id": 7,
+      "name": "Grape"
+    },
+    {
+      "id": 8,
+      "name": "Tangerine"
+    },
+    {
+      "id": 9,
+      "name": "Pineapple"
+    }
+  ],
+  "attribute_list": [],
+  "customToolbar": [
+    [
+      "bold",
+      "italic",
+      "underline"
+    ],
+    [
+      {
+        "list": "ordered"
+      },
+      {
+        "list": "bullet"
+      }
+    ],
+    [
+      "code-block"
+    ]
+  ]
+}
